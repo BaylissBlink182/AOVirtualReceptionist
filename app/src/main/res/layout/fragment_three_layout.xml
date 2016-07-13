@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:background="@drawable/techhand1">-->
+
+
+    <View android:id="@+id/fakeView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Restart"
+        android:id="@+id/btnReset"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_toStartOf="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView3"
+
+        android:background="@drawable/appgirl1"
+
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/fakeView3"
+        android:layout_alignParentBottom="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewx"
+
+        android:textColor="#272ea6"
+        android:text="The person you are visiting has been notified!"
+
+        android:textSize="50dp"
+        android:textStyle="bold"
+
+        android:textAlignment="viewStart"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
+        android:layout_alignEnd="@+id/fakeView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Feel free to relax in the lobby,\n\nThe Front Desk Receptionist has also been notified and will assist you further if needed."
+        android:id="@+id/textViewx2"
+        android:textColor="#000000"
+
+
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewx"
+        android:layout_marginTop="57dp"
+        android:layout_alignEnd="@+id/fakeView3" />
+</RelativeLayout>

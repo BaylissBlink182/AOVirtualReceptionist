@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:background="@drawable/techhand1">-->
+
+
+    <View android:id="@+id/fakeView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Notify Person"
+        android:id="@+id/btnNotifyPerson"
+        android:singleLine="false"
+        android:elegantTextHeight="false"
+        android:visibility="visible"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:textColor="#020202"
+        android:clickable="true"
+
+android:layout_alignRight="@+id/fakeView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/editText3"
+        android:background="#122b9a"
+        android:inputType="text"
+
+
+        android:text="ex. jim schneider"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/fakeView2"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/fakeView2"
+        android:textSize="35dp" />
+
+
+    <AutoCompleteTextView android:id="@+id/emailACList"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+
+
+
+        android:nextFocusUp="@id/emailACList"
+        android:nextFocusLeft="@id/emailACList"
+        android:background="#ffffff"
+        android:selectAllOnFocus="false"
+        android:layout_below="@+id/editText3"
+        android:layout_alignEnd="@+id/imageView1"
+        android:layout_marginEnd="43dp"
+        android:layout_marginTop="38dp"
+        android:textSize="40dp" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1"
+
+        android:background="@drawable/appgirl1"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/fakeView2"
+        android:layout_alignParentBottom="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter the first and last name of the person you wish to notify"
+        android:id="@+id/textView4"
+        android:textColor="#010101"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        android:textSize="45dp"
+
+        android:layout_toStartOf="@+id/fakeView2"
+        android:layout_marginTop="99dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />/>
+</RelativeLayout>
